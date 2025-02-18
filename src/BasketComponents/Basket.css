@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.basket, .basketButtons{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.basketLi {
+    margin: 10px;
+    width: fit-content;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.basketOverLi{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+
+.buttonBasket {
+    
+    position: relative;
+    margin: 20px;
+    padding: 10px 20px;
+    outline: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: #000000;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
+  .buttonBasket span {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+  .buttonBasket:hover {
+    animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  .buttonBasket:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+  .btn-shine {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-shine span {
+    z-index: 20;
+  }
+  
+  .btn-shine:after {
+    background: #5e5e5e;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+.cardOver {
+    width: 290px;
+    height: auto;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+  }
+  
+
+  .cardOver h2, p {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin: 1.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  }
+  
+  .basketOverP{
+    font-size: 20px;
+
+  }
+  
+  .parentBasket {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.parentBasket.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+  .scrollDiv {
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+.buttnEnd {
+    margin-top: 10px;
+    padding: 1em 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .buttnEnd:hover {
+    background-color: #1d1d1d;
+    box-shadow: 0px 15px 20px rgba(99, 99, 99, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .buttnEnd:active {
+    transform: translateY(-1px);
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.priceP{
+    font-size: 20px;
+}
+
+
+@media (max-width: 420px) {
+  .btn-shine:after {
+    width: 10px;
+  }
+  .buttonBasket span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-shine:after {
+    width: 10px;
+  }
+  .buttonBasket span {
+    font-size: 8px;
+  }
+}

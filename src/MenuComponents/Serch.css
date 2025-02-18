@@ -1,0 +1,70 @@
+.input {
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #0f0f0f,
+             -13px -13px 100px #3b3b3b;
+}
+
+.buttonLabel {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #3f3f3f;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #b3b3b3;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ .buttonLabel:disabled {
+  color: #3B3B3B;
+  pointer-events: none;
+ }
+ 
+ .buttonLabel:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .buttonLabel:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
+ .buttonNextDiv {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 500px; 
+  height: 100px; 
+}

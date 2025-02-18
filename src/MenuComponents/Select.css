@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%; 
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 200;
+    justify-content: space-around;
+    color: #fff9ef;
+    font-size: 25px;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 10px 15px #ffffff;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    
+}
+
+.card {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1);
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.7, 0.7);
+}
+
+
+@media (max-width: 1024px) {
+    .cards {
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px; 
+    }
+
+    .cards .card p.second-text {
+        font-size: .2rem;
+    }
+    .cards .card {
+        width: 80%; 
+        max-width: 200px; 
+        height: 200px; 
+        margin: 0; 
+    }
+
+    .cards .card:hover {
+        transform: scale(1.05); 
+        width: 80%; 
+        max-width: 200px; 
+        height: 200px; 
+        margin: 0; 
+    }
+
+    .cards:hover > .card:not(:hover) {
+        filter: blur(0px);
+        transform: scale(0, 0); 
+    }
+
+    .tip{
+        font-size: 1.7rem;
+    }
+
+
+}
