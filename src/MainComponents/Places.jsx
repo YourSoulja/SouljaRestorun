@@ -26,7 +26,7 @@ function Sap() {
                 <div class="front-content">
                     <h1>Ресторан снаружи</h1>
                 </div>
-                <div className="content" style={{ backgroundImage: `url('./img/out.jpg')` }}>
+                <div className="content" style={{ backgroundImage: `url('src/assets/img/out.jpg')` }}>
                 </div>  
             </div>
         </div>
@@ -35,7 +35,7 @@ function Sap() {
                 <div class="front-content">
                     <h1>Ресторан внутри</h1>
                 </div>
-                <div className="content" style={{ backgroundImage: `url('./img/in.jpg')` }}>
+                <div className="content" style={{ backgroundImage: `url('src/assets/img/in.jpg')` }}>
                 </div>  
             </div>
         </div>
@@ -44,7 +44,7 @@ function Sap() {
                 <div class="front-content">
                     <h1>Бар</h1>
                 </div>
-                <div className="content" style={{ backgroundImage: `url('./img/bar.png')` }}>
+                <div className="content" style={{ backgroundImage: `url('src/assets/img/bar.png')` }}>
                 </div>  
             </div>
         </div>
@@ -53,7 +53,7 @@ function Sap() {
                 <div class="front-content">
                     <h1>V.I.P</h1>
                 </div>
-                <div className="content" style={{ backgroundImage: `url('./img/Vip.jpg')` }}>
+                <div className="content" style={{ backgroundImage: `url('src/assets/img/Vip.jpg')` }}>
                 </div>  
             </div>
         </div>

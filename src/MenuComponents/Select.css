@@ -88,8 +88,8 @@
     }
 
     .cards:hover > .card:not(:hover) {
-        filter: blur(0px);
-        transform: scale(0, 0); 
+        filter: none;
+        transform: none; 
     }
 
     .tip{

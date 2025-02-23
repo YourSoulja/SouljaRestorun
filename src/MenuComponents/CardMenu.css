@@ -126,7 +126,7 @@
     opacity: 1;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1740px) {
     .inRow {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -151,6 +151,12 @@
 }
 
 @media (max-width: 768px) {
+    .inRow {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+    }
     .card {
         width: 150px;
         height: 200px;

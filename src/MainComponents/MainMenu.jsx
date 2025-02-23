@@ -405,12 +405,12 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `./img/hach.jpeg`, text: 'Основное' },
-      { image: `./img/czezar-s-kuriczej.jpg`, text: 'Второе' },
-      { image: `./img/desert.jpg`, text: 'Десерты' },
-      { image: `./img/dop.jpg`, text: 'Дополнительно' },
-      { image: `./img/drinks.jpeg`, text: 'Напитки' },
-      { image: `./img/kalina.jpg`, text: 'Кальяны' },
+      { image: `src/assets/img/hach.jpeg`, text: 'Основное' },
+      { image: `src/assets/img/czezar-s-kuriczej.jpg`, text: 'Второе' },
+      { image: `src/assets/img/desert.jpg`, text: 'Десерты' },
+      { image: `src/assets/img/dop.jpg`, text: 'Дополнительно' },
+      { image: `src/assets/img/drinks.jpeg`, text: 'Напитки' },
+      { image: `src/assets/img/kalina.jpg`, text: 'Кальяны' },
     ]
     const galleryItems = items && items.length ? items : defaultItems
     this.mediasImages = galleryItems.concat(galleryItems)
