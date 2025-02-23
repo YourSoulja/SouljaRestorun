@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Используем HashRouter
 import Particles from './MainComponents/Particles';
 import Sap from './MainComponents/Sap';
 import Dock from './Dock';
@@ -39,7 +39,6 @@ function App() {
             }
         });
     };
-    
 
     const clearBasket = () => {
         setBasketItems([]);

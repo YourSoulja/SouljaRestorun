@@ -5,9 +5,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 50px;
-    grid-row-gap: px;
-    }
-
+    grid-row-gap: 0px;
+}
 
 .card-container {
     width: 300px;
@@ -16,49 +15,49 @@
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-  }
-  
-  
-  .cardPlaces {
+}
+
+.cardPlaces {
     width: 100%;
     height: 100%;
     border-radius: inherit;
-  }
-  
-  .cardPlaces .front-content {
+}
+
+.cardPlaces .front-content {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
-  }
-  
-  .cardPlaces .front-content p, h1 {
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardPlaces .front-content p, h1 {
     font-family: "Montserrat Alternates", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     opacity: 1;
     background: linear-gradient(-45deg, #b6b6b6 0%, #383838 100% );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
-  }
-  
-  .cardPlaces .content {
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardPlaces .content {
     font-family: "Montserrat Alternates", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: 100% 100%;
+    background-size: cover; 
+    background-position: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,11 +68,11 @@
     line-height: 1.5;
     border-radius: 5px;
     pointer-events: none;
-    transform: translatex(96%);
+    transform: translateX(96%);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
+}
 
-.backgroundPClass{
+.backgroundPClass {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.2px);
     -webkit-backdrop-filter: blur(10.2px);
@@ -83,80 +82,77 @@
     color: #383838;
     margin-top: 230px;
     font-weight: 700;
-  }
-  
-  .cardPlaces .content .heading {
-    font-size: 32px;
+}
+
+.cardPlaces .content .heading {
+    font-size: 2rem;
     font-weight: 700;
-  }
-  
-  .cardPlaces:hover .content {
+}
+
+.cardPlaces:hover .content {
     transform: translateY(0);
-  }
-  
-  .cardPlaces:hover .front-content {
+}
+
+.cardPlaces:hover .front-content {
     transform: translateX(20%);
-  }
-  
-  .cardPlaces:hover .front-content p {
+}
+
+.cardPlaces:hover .front-content p {
     opacity: 0;
-  }
-  
-  
-  @media (max-width: 1750px) {
+}
+
+@media (max-width: 1750px) {
     .card-container {
-      width: 300px;
-      height: 300px;
-      position: relative;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
     }
-  }
+}
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .parent {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      }
-  }
-  
-  @media (max-width: 425px) {
-    .card-container {
-      width: 200px;
-      height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
 
+@media (max-width: 425px) {
+    .card-container {
+        width: 200px;
+        height: 200px;
     }
     .parent {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    h1 {
+        font-size: 1.5625rem;
+    }
+}
 
-      h1 {
-        font-size: 25px;
-      }
-  }
-  @media (max-width: 375px) {
+@media (max-width: 450px) {
     .card-container {
-      width: 150px;
-      height: 150px;
-
+        width: 150px;
+        height: 150px;
     }
     .parent {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      }
-
-      h1 {
-        font-size: 20px;
-      }
-  }
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+}

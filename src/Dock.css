@@ -45,7 +45,7 @@ a {
 .dock-icon {
   font-family: "Montserrat Alternates", serif;
   font-weight: 100;
-  font-size: 13px; 
+  font-size: .8125rem; 
   display: flex;
   color: #fff;
   align-items: center;

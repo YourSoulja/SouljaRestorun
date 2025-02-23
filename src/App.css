@@ -10,7 +10,7 @@ html{
     z-index: 900;
 }
 .h1Class{
-    font-size: 50px;
+    font-size: 3.125rem;
     margin-top: 50px;
 }
 .WorkerName {
@@ -59,7 +59,7 @@ ul {
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;
-    font-size: 14px;
+    font-size: .875rem;
     transition: all 0.3s ease;
   }
   .example-2 .icon-content:hover .tooltip {
@@ -119,7 +119,7 @@ ul {
       grid-row-gap: 20px;
     }
     .h1Class{
-      font-size: 30px;
+      font-size: 1.875rem;
     }
     .example-2 .icon-content a {
       width: 40px;
@@ -145,7 +145,7 @@ ul {
       grid-row-gap: 20px;
     }
     .h1Class{
-      font-size: 30px;
+      font-size: 1.875rem;
     }
     .example-2 .icon-content a {
       width: 40px;

@@ -33,7 +33,7 @@
     font-family: "Montserrat Alternates", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 30px;
+    font-size: 1.875rem;
     padding: 5px;
     color: #FFFBF4;
     white-space: nowrap;
@@ -57,7 +57,7 @@
   
   @media (max-width: 375px) {
     .text-rotate-word {
-      font-size: 20px;
+      font-size: .9375rem;
     }
     
   }

@@ -405,20 +405,20 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `src/assets/img/hach.jpeg`, text: 'Основное' },
-      { image: `src/assets/img/czezar-s-kuriczej.jpg`, text: 'Второе' },
-      { image: `src/assets/img/desert.jpg`, text: 'Десерты' },
-      { image: `src/assets/img/dop.jpg`, text: 'Дополнительно' },
-      { image: `src/assets/img/drinks.jpeg`, text: 'Напитки' },
-      { image: `src/assets/img/kalina.jpg`, text: 'Кальяны' },
-    ]
-    const galleryItems = items && items.length ? items : defaultItems
-    this.mediasImages = galleryItems.concat(galleryItems)
+      { image: `${import.meta.env.BASE_URL}img/hach.jpeg`, text: 'Основное' },
+      { image: `${import.meta.env.BASE_URL}img/czezar-s-kuriczej.jpg`, text: 'Второе' },
+      { image: `${import.meta.env.BASE_URL}img/desert.jpg`, text: 'Десерты' },
+      { image: `${import.meta.env.BASE_URL}img/dop.jpg`, text: 'Дополнительно' },
+      { image: `${import.meta.env.BASE_URL}img/drinks.jpeg`, text: 'Напитки' },
+      { image: `${import.meta.env.BASE_URL}img/kalina.jpg`, text: 'Кальяны' },
+    ];
+    const galleryItems = items && items.length ? items : defaultItems;
+    this.mediasImages = galleryItems.concat(galleryItems);
     this.medias = this.mediasImages.map((data, index) => {
       return new Media({
         geometry: this.planeGeometry,
         gl: this.gl,
-        image: data.image,
+        image: data.image, 
         index,
         length: this.mediasImages.length,
         renderer: this.renderer,
@@ -430,8 +430,8 @@ class App {
         textColor,
         borderRadius,
         font
-      })
-    })
+      });
+    });
   }
   onTouchDown(e) {
     this.isDown = true

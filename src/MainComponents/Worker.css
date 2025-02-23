@@ -14,7 +14,7 @@
   transition: all 0.4s;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: #fff9ef;
   text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 10px 15px #ffffff;
   overflow: hidden;
@@ -68,7 +68,7 @@
 }
 
 .pWorkerClass {
-  font-size: 16px; 
+  font-size: 1rem; 
   margin: 5px 0; 
   text-align: center;
   word-wrap: break-word;
@@ -78,7 +78,7 @@
   .cardWorker {
     width: 120px;
     height:170px;
-    font-size: 15px;
+    font-size: .9375rem;
   }
   .cardWorker:hover {
     transform: scale(1.1);
